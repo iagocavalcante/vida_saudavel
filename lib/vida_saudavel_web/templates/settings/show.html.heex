@@ -1,0 +1,18 @@
+<h1>Show Settings</h1>
+
+<ul>
+
+  <li>
+    <strong>start_hour:</strong>
+    <%= @settings.start_hour %>
+  </li>
+
+  <li>
+    <strong>end_hour:</strong>
+    <%= @settings.end_hour %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: Routes.settings_path(@conn, :edit, @settings) %></span> |
+<span><%= link "Back", to: Routes.settings_path(@conn, :index) %></span>
